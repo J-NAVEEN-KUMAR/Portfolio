@@ -27,13 +27,20 @@ const Skills = () => {
                 <a
                   href="https://www.linkedin.com/in/j-naveen-kumar/"
                   target="_blank"
+                  without
+                  rel="noreferrer"
                 >
                   <img src="./assets/linkedin.png" alt="" className="icon" />
                 </a>
                 <span>LinkedIn</span>
               </div>
               <div className="infoItemLink">
-                <a href="https://github.com/J-NAVEEN-KUMAR" target="_blank">
+                <a
+                  href="https://github.com/J-NAVEEN-KUMAR"
+                  target="_blank"
+                  without
+                  rel="noreferrer"
+                >
                   <img src="./assets/github.png" alt="" className="icon" />
                 </a>
                 <span>GitHub</span>
@@ -73,7 +80,10 @@ const Skills = () => {
           </div>
           <div className="quote">
             <img src="./assets/quote.gif" alt="" />
-            <span>"Our body needs routine, but the mind doesn't. So, keep exploring."</span>
+            <span>
+              "Our body needs routine, but the mind doesn't. So, keep
+              exploring."
+            </span>
           </div>
         </div>
       </div>
