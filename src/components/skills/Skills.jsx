@@ -55,7 +55,7 @@ const Skills = () => {
               </div>
               <div className="bullet">
                 <img src="./assets/list.png" alt="" />
-                <li>Passionate web desinger and web developer.</li>
+                <li>Passionate web designer and web developer.</li>
               </div>
               <div className="bullet">
                 <img src="./assets/list.png" alt="" />

@@ -23,7 +23,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    // background-color: #f38375;
+    background-color: $mainColor;
     z-index: 0;
     clip-path: polygon(25% 0, 0 0, 0 100%, 50% 100%);
   }
