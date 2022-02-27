@@ -1,6 +1,8 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { useLottie } from "lottie-react";
+import arrow from "./arrow.json";
 
 const Intro = () => {
   const textRef = useRef();
@@ -14,10 +16,25 @@ const Intro = () => {
     });
   }, []);
 
+  //lottie animation
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: arrow,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const mod = {
+    height: 100,
+    width: 100,
+  };
+  const { View } = useLottie(defaultOptions, mod);
+
   return (
     <div className="Intro" id="Intro">
       <div className="wave"></div>
-        <div className="introShape"></div>
+      <div className="introShape"></div>
       <div className="left">
         <div className="imageContainer">
           <img src="./assets/dp2.png" alt="" />
@@ -32,7 +49,10 @@ const Intro = () => {
           </h3>
         </div>
         <a href="#skills">
-          <img src="./assets/down.png" alt="" />
+          {/* <img src="./assets/down.png" alt="" /> */}
+          <div className="lottie">
+            <div className="anime">{View}</div>
+          </div>
         </a>
       </div>
     </div>

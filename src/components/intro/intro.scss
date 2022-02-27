@@ -10,12 +10,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../../../public/assets/wave.svg');
+    background-image: url("../../../public/assets/wave.svg");
     z-index: 0;
     position: absolute;
   }
-
-
 
   .introShape {
     width: 100%;
@@ -37,7 +35,7 @@
       width: 900px;
       height: 900px;
       // background-color: #800f2f;
-      // background-color: #f38375;
+      // background-color: $mainColor;
       // border-radius: 50%;
       display: flex;
       align-items: center;
@@ -95,6 +93,14 @@
         width: 50px;
         animation: arrowBlink 2s ease infinite;
         fill: red;
+      }
+
+      .lottie {
+        position: relative;
+        .anime {
+          bottom: 0;
+          position: absolute;
+        }
       }
 
       @keyframes arrowBlink {
