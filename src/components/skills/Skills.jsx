@@ -21,6 +21,11 @@ const Skills = () => {
               <span>MERN Stack Developer</span>
               <span>+91 7661071399</span>
               <span>naveen.jerban@gmail.com</span>
+              <div className="resume">
+                <a href="" target="_blank">
+                  <button>My Resume</button>
+                </a>
+              </div>
             </div>
             <div className="social">
               <div className="infoItemLink">

@@ -43,6 +43,24 @@
           cursor: pointer;
           color: inherit;
         }
+        .Resume {
+          background-color: $mainColor;
+          color: white;
+          padding: 3px;
+          border: 1px solid $mainColor;
+          border-radius: 10px;
+          font-size: 15px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            transform: scaleX(1.025);
+            box-shadow: 2px 2px 8px 0px rgba(90, 24, 154, 0.58);
+            -webkit-box-shadow: 2px 2px 8px 0px rgba(90, 24, 154, 0.58);
+            -moz-box-shadow: 2px 2px 8px 0px rgba(90, 24, 154, 0.58);
+          }
+        }
       }
     }
 

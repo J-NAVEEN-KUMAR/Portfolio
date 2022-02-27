@@ -22,6 +22,11 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
             <GitHub className="icon"/>
             <a href="https://github.com/J-NAVEEN-KUMAR" target="_blank" className="connect">GitHub</a>
           </div>
+          <div className="itemContainer">
+            <a href="#" target="_blank" className="connect">
+              <button className="Resume">My Resume</button>
+            </a>
+          </div>
         </div>
         <div className="right">
           <div className="hamburger" onClick={()=> setMenuOpen(!menuOpen)}>

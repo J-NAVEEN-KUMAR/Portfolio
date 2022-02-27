@@ -2,6 +2,7 @@
 .Container {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 
   .about {
     flex: 0.5;
@@ -64,6 +65,28 @@
             font-size: 14px;
             font-weight: 600;
           }
+          .resume {
+            margin-top: 5px;
+            transition: all 0.25s ease-in-out;
+            button {
+              padding: 3px;
+              font-weight: 600;
+              border: 1px solid black;
+              border-radius: 10px;
+              font-size: 14px;
+              background-color: $mainColor;
+              color: white;
+              cursor: pointer;
+              transition: all 0.25s ease-in-out;
+
+              &:hover {
+                transform: scaleX(1.025);
+                box-shadow: 2px 2px 8px 0px rgba(90, 24, 154, 0.58);
+                -webkit-box-shadow: 2px 2px 8px 0px rgba(90, 24, 154, 0.58);
+                -moz-box-shadow: 2px 2px 8px 0px rgba(90, 24, 154, 0.58);
+              }
+            }
+          }
         }
 
         .social {
@@ -91,7 +114,7 @@
       }
 
       .bottom {
-        padding: 20px 40px;
+        padding: 0px 40px;
         ul {
           font-weight: 600;
           font-size: 18px;
@@ -115,13 +138,13 @@
         align-items: center;
         padding: 40px;
 
-        img{
+        img {
           width: 60px;
         }
-        span{
+        span {
           margin-left: 10px;
           font-size: 25px;
-          font-family: 'Dancing Script', cursive;
+          font-family: "Dancing Script", cursive;
           font-weight: 700;
           color: $mainColor;
         }
