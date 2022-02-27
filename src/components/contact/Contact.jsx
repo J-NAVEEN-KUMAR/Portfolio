@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+import { useLottie } from "lottie-react";
+import mail from "./Mail_animation.json";
 
 const Alert = forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -41,6 +43,21 @@ const Contact = () => {
 
     setOpen(false);
   };
+
+  //Lottie animation
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: mail,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const mod = {
+    height: 200,
+    width: 300,
+  };
+  const { View } = useLottie(defaultOptions, mod);
 
   return (
     <div className="main">
@@ -85,24 +102,29 @@ const Contact = () => {
               to colloborate if the right project comes along.
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="Your Name"
-                name="user_name"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Email Subject"
-                name="user_subject"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email address"
-                name="user_email"
-                required
-              />
+              <div className="input-section">
+                <div className="left-section">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    name="user_name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Email Subject"
+                    name="user_subject"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your Email address"
+                    name="user_email"
+                    required
+                  />
+                </div>
+                <div className="lottie">{View}</div>
+              </div>
               <textarea
                 name="message"
                 placeholder="Message"

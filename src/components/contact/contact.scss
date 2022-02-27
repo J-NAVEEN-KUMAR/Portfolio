@@ -76,21 +76,31 @@
         form {
           margin-top: 20px;
         }
-        input {
-          width: 50%;
-          height: 50px;
-          border: none;
-          border-bottom: 1px solid $mainColor;
-          margin: 10px 0px;
-          font-size: 16px;
-          padding-left: 10px;
-          transition: all 0.5s ease;
+        .input-section {
+          display: flex;
 
-          &:focus {
-            outline: none;
+          .left-section {
+            input {
+              width: 100%;
+              height: 50px;
+              border: none;
+              border-bottom: 1px solid $mainColor;
+              margin: 10px 0px;
+              font-size: 16px;
+              padding-left: 10px;
+              transition: all 0.5s ease;
+
+              &:focus {
+                outline: none;
+              }
+              &:hover {
+                transform: scale(1.025);
+              }
+            }
           }
-          &:hover {
-            transform: scale(1.025);
+          .lottie {
+            transform: scale(1.5);
+            
           }
         }
         textarea {
