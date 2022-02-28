@@ -13,9 +13,9 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         <li onClick={handleClick}>
           <a href="#Works">Works</a>
         </li>
-        <li onClick={handleClick}>
+        {/* <li onClick={handleClick}>
           <a href="#Achievements">Achievements</a>
-        </li>
+        </li> */}
         <li onClick={handleClick}>
           <a href="#Contact">Contact</a>
         </li>

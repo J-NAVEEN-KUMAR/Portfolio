@@ -23,8 +23,17 @@ const Achievements = () => {
       <div className="list">
         <div className="listItem">
           <div className="icon">{View}</div>
-          <div className="title">Title</div>
-          <div className="desc">Desc</div>
+          <div className="title">
+            <h3>
+              STEP Level with Grade <strong>O</strong>
+            </h3>
+          </div>
+          <div className="desc">
+            <img
+              src="../assets/1.jpg"
+              alt=""
+            />
+          </div>
           <a
             href="https://drive.google.com/file/d/1guslVCkaEklg0U3FMGtOrxdll5tmaKTp/view?usp=sharing"
             className="view"

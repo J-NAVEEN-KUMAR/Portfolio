@@ -71,10 +71,17 @@ export const skills = [
 const projects = [
   {
     id: "1",
-    icon: "./assets/smartphone.png",
-    title: "Project 1",
-    desc: "project description",
-    img: "./assets/web1.jpg",
+    icon: "./assets/website.png",
+    title: "NJHall",
+    desc: "Movie website design with dark and light mode toggle.",
+    img: "./assets/projects/njhall.png",
+    website: "https://zealous-nightingale-5debf8.netlify.app/",
+    code: "https://github.com/J-NAVEEN-KUMAR/Movie-design",
+    tech: [
+      { id: "1", item: "./assets/skills/html5.png" },
+      { id: "2", item: "./assets/skills/css3.png" },
+      { id: "3", item: "./assets/skills/javascript.png" },
+    ],
   },
   {
     id: "2",
@@ -82,6 +89,13 @@ const projects = [
     title: "Project 2",
     desc: "project description",
     img: "./assets/web2.jpg",
+    website: "",
+    code: "",
+    tech: [
+      { id: "1", item: "./assets/skills/html5.png" },
+      { id: "2", item: "./assets/skills/css3.png" },
+      { id: "3", item: "./assets/skills/javascript.png" },
+    ],
   },
   {
     id: "3",
@@ -89,6 +103,13 @@ const projects = [
     title: "Project 3",
     desc: "project description 3",
     img: "./assets/web3.jpg",
+    website: "",
+    code: "",
+    tech: [
+      { id: "1", item: "./assets/skills/html5.png" },
+      { id: "2", item: "./assets/skills/css3.png" },
+      { id: "3", item: "./assets/skills/javascript.png" },
+    ],
   },
 ];
 
