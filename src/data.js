@@ -88,11 +88,11 @@ const projects = [
     icon: "./assets/website.png",
     title: "NJAdmin",
     desc: "Admin dashboard website UI with Home, user and product pages.",
-    img: "./assets/web2.jpg",
+    img: "./assets/projects/njadmin.jpg",
     website: "https://modest-goldwasser-79d16d.netlify.app/",
     code: "https://github.com/J-NAVEEN-KUMAR/NJ-admin",
     tech: [
-      { id: "1", item: "./assets/skills/reactjs.png" },
+      { id: "1", item: "./assets/skills/reactjs1.png" },
       { id: "2", item: "./assets/skills/css3.png" },
     ],
   },
@@ -101,7 +101,7 @@ const projects = [
     icon: "./assets/website.png",
     title: "Project 3",
     desc: "project description 3",
-    img: "./assets/web3.jpg",
+    img: "./assets/construction.jpg",
     website: "",
     code: "",
     tech: [
