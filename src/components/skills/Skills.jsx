@@ -22,7 +22,10 @@ const Skills = () => {
               <span>+91 7661071399</span>
               <span>naveen.jerban@gmail.com</span>
               <div className="resume">
-                <a href="" target="_blank">
+                <a
+                  href="https://drive.google.com/file/d/12bN-JCNHwLWkDaOngziT7B40SQM3Z9Y0/view?usp=sharing"
+                  target="_blank"
+                >
                   <button>My Resume</button>
                 </a>
               </div>
