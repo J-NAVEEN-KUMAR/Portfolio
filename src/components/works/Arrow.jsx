@@ -13,8 +13,8 @@ const Arrow = () => {
     },
   };
   const mod = {
-    height: 200,
-    width: 200,
+    height: 50,
+    width: 175,
   };
   const { View } = useLottie(defaultOptionsRight, mod);
   return <div>{View}</div>;

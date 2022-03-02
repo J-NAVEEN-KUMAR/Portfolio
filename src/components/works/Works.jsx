@@ -49,14 +49,13 @@ const Works = () => {
                         <img src={i.item} alt="" />
                       </div>
                     ))}
-                  </div>
-                  <a href={p.website} target="_blank" className="liveWebsite">
+                  </div> 
+                  <a href={p.website} target="_blank" rel="noreferrer" className="liveWebsite">
                     <img src="../assets/demo.png" alt="" />
                     <button>Website</button>
                   </a>
-                  <a href={p.code} target="_blank" className="liveWebsite">
+                  <a href={p.code} target="_blank" rel="noreferrer" className="liveWebsite">
                     <img src="../assets/code.png" alt="" />
-
                     <button>Source code</button>
                   </a>
                 </div>

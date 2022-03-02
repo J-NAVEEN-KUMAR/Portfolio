@@ -1,12 +1,6 @@
 @import "../../global.scss";
 .Works {
   background-color: crimson;
-  aspect-ratio: 1000/500;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,29 +9,43 @@
   .swing {
     position: absolute;
     left: -50px;
-    top: -100px;
+    top: -80px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .arrow {
-    // height: 50px;
     position: absolute;
     cursor: pointer;
 
     &.left {
-      left: 100px;
+      left: 1%;
       transform: rotateY(180deg);
+
+      @include mobile {
+        left: -15%;
+      }
     }
     &.right {
-      right: 100px;
+      right: 1%;
+      @include mobile {
+        right: -15%;
+      }
     }
   }
 
   .slider {
-    height: 450px;
+    height: 60%;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1.5s ease-out;
+
+    @include mobile {
+      height: 80%;
+    }
 
     .workContainer {
       width: 100vw;
@@ -46,9 +54,15 @@
       justify-content: center;
 
       .item {
-        width: 850px;
+        width: 60%;
         height: 100%;
         padding: 10px;
+
+        @include mobile {
+          flex-direction: column;
+          height: 70%;
+          padding: 5px;
+        }
 
         background-color: white;
         border-radius: 20px;
@@ -60,7 +74,7 @@
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0.15);
 
-        backdrop-filter: blur(50px);
+        backdrop-filter: blur(1px);
 
         .left {
           flex: 4;
@@ -68,14 +82,19 @@
           display: flex;
           align-items: center;
           justify-content: center;
+
+          @include mobile {
+            width: 100%;
+          }
           .leftContainer {
             width: 90%;
             height: 90%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // color: #17255a;
-            color: black;
+            color: #17255a;
+            // color: black;
+
 
             .imgContainer {
               // width: 40px;
@@ -90,48 +109,68 @@
               }
             }
 
+            strong {
+              @include mobile {
+                display: none;
+              }
+            }
           }
           h2 {
             font-size: 40px;
-            font-weight:900;
-          font-family: "Dancing Script";
-            
+            font-weight: 900;
+            font-family: "Dancing Script";
+
+            @include mobile {
+              font-size: 30px;
+            }
           }
           p {
             font-size: 18px;
             font-weight: 300;
+
+            @include mobile {
+              display: none;
+            }
           }
           .tech {
             // margin-top: 5px;
-            color: rgb(218, 215, 198);
+            // color: rgb(218, 215, 198);
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            .techItem {
+            // .techItem {
+            // }
+            @include mobile {
+              display: none;
             }
           }
           .liveWebsite {
             display: flex;
-            align-items:flex-start;
+            align-items: flex-start;
             // justify-content:center;
             margin-top: 20px;
-            img{
+
+            @include mobile {
+              margin-top: 10px;
+            }
+            img {
               width: 40px;
               height: 40px;
             }
-          }
-          button {
-            margin-left: 15px;
-            width: 40%;
-            color: white;
-            padding: 5px;
-            background-color: purple;
-            font-size: 14px;
-            font-weight: 600;
-            border-radius: 10px;
-            cursor: pointer;
-            margin-top: 10px;
-            border: none;
+            button {
+              margin-left: 15px;
+              // width: 40%;
+              color: white;
+              padding: 5px;
+              background-color: $mainColor;
+              font-size: 14px;
+              font-weight: 600;
+              border-radius: 10px;
+              cursor: pointer;
+              margin-top: 10px;
+              border: none;
+              
+            }
           }
         }
         .right {
@@ -142,6 +181,10 @@
           justify-content: center;
           overflow: hidden;
           position: relative;
+
+          @include mobile {
+            width: 100%;
+          }
           img {
             width: 100%;
             position: absolute;
@@ -151,7 +194,7 @@
             object-fit: contain;
 
             &:hover {
-              transform: translateY(-100%);
+              transform: translateY(-80%);
             }
           }
         }

@@ -92,8 +92,9 @@ const projects = [
     website: "https://modest-goldwasser-79d16d.netlify.app/",
     code: "https://github.com/J-NAVEEN-KUMAR/NJ-admin",
     tech: [
-      { id: "1", item: "./assets/skills/reactjs1.png" },
-      { id: "2", item: "./assets/skills/css3.png" },
+      { id: "1", item: "./assets/skills/html5.png" },
+      { id: "2", item: "./assets/skills/reactjs1.png" },
+      { id: "3", item: "./assets/skills/css3.png" },
     ],
   },
   {

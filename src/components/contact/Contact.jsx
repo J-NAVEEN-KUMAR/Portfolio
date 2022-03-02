@@ -83,13 +83,14 @@ const Contact = () => {
                 <a
                   href="https://www.linkedin.com/in/j-naveen-kumar/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src="./assets/linkedin.png" alt="" className="icon" />
                 </a>
                 Connect with me on LinkedIn
               </div>
               <div className="infoItemLink">
-                <a href="https://github.com/J-NAVEEN-KUMAR" target="_blank">
+                <a href="https://github.com/J-NAVEEN-KUMAR" target="_blank" rel="noreferrer">
                   <img src="./assets/github.png" alt="" className="icon" />
                 </a>
                 See my GitHub profile
