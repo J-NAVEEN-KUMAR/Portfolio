@@ -8,6 +8,9 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           <a href="#Intro" className="logo">
             Naveen Kumar J.
           </a>
+          <a href="#Intro" className="logo-sm">
+            NJ.
+          </a>
           <div className="itemContainer">
             <Person className="icon" />
             <a href="#Contact" className="connect">
@@ -25,6 +28,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             <a
               href="https://www.linkedin.com/in/j-naveen-kumar/"
               target="_blank"
+              rel="noreferrer"
               className="connect"
             >
               LinkedIn
@@ -35,6 +39,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             <a
               href="https://github.com/J-NAVEEN-KUMAR"
               target="_blank"
+              rel="noreferrer"
               className="connect"
             >
               GitHub
@@ -44,6 +49,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             <a
               href="https://drive.google.com/file/d/12bN-JCNHwLWkDaOngziT7B40SQM3Z9Y0/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
               className="connect"
             >
               <button className="Resume">My Resume</button>

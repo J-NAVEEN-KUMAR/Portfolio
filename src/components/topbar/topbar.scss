@@ -25,16 +25,40 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        @include mobile {
+          display: none;
+        }
+        
+      }
+      .logo-sm {
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 40px;
+        display: none;
+
+        @include mobile {
+          display: block;
+        }
       }
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
 
+        @include mobile {
+          margin-left: 10px;
+          
+        }
+
         .icon {
           font-size: 24px;
           margin-right: 5px;
           cursor: pointer;
+          @include mobile {
+            display: none;
+          }
         }
         .connect {
           font-size: 15px;
@@ -42,6 +66,10 @@
           text-decoration: none;
           cursor: pointer;
           color: inherit;
+
+          @include mobile {
+            display: none;
+          }
         }
         .Resume {
           background-color: $mainColor;

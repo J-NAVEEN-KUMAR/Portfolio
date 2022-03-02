@@ -12,7 +12,7 @@ const Intro = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Full Stack Developer", "MERN Stack Developer", "Traveller"],
+      strings: ["Full Stack Developer", "Web Designer", "Tech Enthusiast", "Traveller"],
     });
   }, []);
 
