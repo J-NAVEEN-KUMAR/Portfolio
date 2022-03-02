@@ -111,15 +111,15 @@ const Contact = () => {
                     required
                   />
                   <input
-                    type="text"
-                    placeholder="Email Subject"
-                    name="user_subject"
-                    required
-                  />
-                  <input
                     type="email"
                     placeholder="Your Email address"
                     name="user_email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Email Subject"
+                    name="user_subject"
                     required
                   />
                 </div>

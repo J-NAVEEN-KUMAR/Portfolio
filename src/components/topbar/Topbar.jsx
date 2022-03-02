@@ -50,7 +50,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
               href="https://drive.google.com/file/d/12bN-JCNHwLWkDaOngziT7B40SQM3Z9Y0/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="connect"
+              className="connect connect-sm"
             >
               <button className="Resume">My Resume</button>
             </a>

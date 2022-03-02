@@ -10,6 +10,8 @@
     height: 80%;
     flex: 9;
 
+    
+
     .bg {
       width: 20px;
       height: 100%;
@@ -21,12 +23,21 @@
       display: flex;
       // height: 90%;
 
+      @include mobile {
+        flex-direction: column;
+        padding: 0 30px;
+      }
+
       .left {
         flex: 1;
 
         .title {
           font-size: 60px;
           width: 80%;
+          @include mobile {
+            font-size: 50px;
+            width: 100%;
+          }
         }
 
         .info {
@@ -36,6 +47,11 @@
             margin: 50px 0px;
             font-weight: 300;
             width: 70%;
+
+            @include mobile {
+              margin: 0;
+              width: 100%;
+            }
 
             .icon {
               width: 40px;
@@ -49,6 +65,11 @@
             margin: 50px 0px;
             font-weight: 300;
             width: 70%;
+
+            @include mobile {
+              margin: 0;
+              width: 100%;
+            }
 
             .icon {
               width: 40px;
@@ -69,12 +90,20 @@
         flex-direction: column;
         justify-content: center;
 
+        @include mobile {
+          margin-top: 10px;
+        }
+
         .desc {
           font-weight: 300;
         }
 
         form {
           margin-top: 20px;
+
+          @include mobile {
+            margin-top: 10px;
+          }
         }
         .input-section {
           display: flex;
@@ -100,6 +129,10 @@
           }
           .lottie {
             transform: scale(1.5);
+
+            @include mobile {
+              display: none;
+            }
             
           }
         }

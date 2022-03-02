@@ -71,6 +71,11 @@
             display: none;
           }
         }
+        .connect-sm {
+          @include mobile {
+            display: block;
+          }
+        }
         .Resume {
           background-color: $mainColor;
           color: white;
