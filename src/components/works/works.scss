@@ -25,13 +25,13 @@
       transform: rotateY(180deg);
 
       @include mobile {
-        left: -15%;
+        left: -10%;
       }
     }
     &.right {
-      right: 1%;
+      right: 10%;
       @include mobile {
-        right: -15%;
+        right: -9%;
       }
     }
   }

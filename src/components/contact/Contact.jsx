@@ -129,7 +129,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 placeholder="Message"
-                rows="5"
+                rows="4"
                 required
               ></textarea>
               <Stack spacing={2}>
