@@ -44,20 +44,32 @@ const Works = () => {
                     Technologies Used:{" "}
                   </strong>
                   <div className="tech">
-                    {p.tech.map((i)=>(
+                    {p.tech.map((i) => (
                       <div className="techItem">
                         <img src={i.item} alt="" />
                       </div>
                     ))}
-                  </div> 
-                  <a href={p.website} target="_blank" rel="noreferrer" className="liveWebsite">
-                    <img src="../assets/demo.png" alt="" />
-                    <button>Website</button>
-                  </a>
-                  <a href={p.code} target="_blank" rel="noreferrer" className="liveWebsite">
-                    <img src="../assets/code.png" alt="" />
-                    <button>Source code</button>
-                  </a>
+                  </div>
+                  <div className="liveWebsite">
+                    <a
+                      href={p.website}
+                      target="_blank"
+                      rel="noreferrer"
+                      // className="liveWebsite"
+                    >
+                      <img src="../assets/demo.png" alt="" />
+                      <button>Website</button>
+                    </a>
+                    <a
+                      href={p.code}
+                      target="_blank"
+                      rel="noreferrer"
+                      // className="liveWebsite"
+                    >
+                      <img src="../assets/code.png" alt="" />
+                      <button>Source code</button>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="right">
