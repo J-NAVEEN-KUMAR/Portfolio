@@ -90,7 +90,11 @@ const Contact = () => {
                 Connect with me on LinkedIn
               </div>
               <div className="infoItemLink">
-                <a href="https://github.com/J-NAVEEN-KUMAR" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/J-NAVEEN-KUMAR"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src="./assets/github.png" alt="" className="icon" />
                 </a>
                 See my GitHub profile
@@ -151,10 +155,15 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {/* <div className="footer">
+      <div className="footer">
         <div className="footerbg">
+          <p>
+            Created by{" "}
+            <strong style={{ color: "crimson" }}> Naveen Kumar J </strong> |
+            &#169; 2022 All rights reserved.
+          </p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
