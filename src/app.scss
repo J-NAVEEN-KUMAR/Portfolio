@@ -2,11 +2,13 @@
 
 .App {
   height: 10vh;
+  background-color: black;
 
   .sections {
     width: 100%;
     height: calc(100vh - 4rem);
-    background-color: white;
+    background-color: black;
+    color: white;
     position: relative;
     top: 4rem;
     scroll-behavior: smooth;
