@@ -6,10 +6,10 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
       <div className="wrapper">
         <div className="left">
           <a href="#Intro" className="logo">
-            Naveen Kumar J.
+            Naveen Kumar J
           </a>
           <a href="#Intro" className="logo-sm">
-            NJ.
+            NJ
           </a>
           <div className="itemContainer">
             <Person className="icon" />

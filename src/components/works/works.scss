@@ -21,7 +21,7 @@
     cursor: pointer;
 
     &.left {
-      left: 1%;
+      left: 10%;
       transform: rotateY(180deg);
 
       @include mobile {
