@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <div className="main">
       <div className="Contact" id="Contact">
-        <div className="bg"></div>
+        {/* <div className="bg"></div> */}
         <div className="wrapper">
           <div className="left">
             <h1 className="title">Get in Touch!</h1>
