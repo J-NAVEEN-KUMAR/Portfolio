@@ -104,7 +104,7 @@ const Contact = () => {
           <div className="right">
             <p className="desc">
               <strong>What's on your mind?</strong> Get in touch. Always ready
-              to colloborate if the right project comes along.
+              to collaborate if the right project comes along.
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
               <div className="input-section">
