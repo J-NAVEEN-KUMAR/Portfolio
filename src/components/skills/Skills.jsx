@@ -23,7 +23,7 @@ const Skills = () => {
               <span>naveen.jeruban@gmail.com</span>
               <div className="resume">
                 <a
-                  href="https://drive.google.com/file/d/12bN-JCNHwLWkDaOngziT7B40SQM3Z9Y0/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bfAn2c0r_JRUVU-oUWhrULKypTIrfzfN/view"
                   target="_blank"
                   rel="noreferrer"
                 >
