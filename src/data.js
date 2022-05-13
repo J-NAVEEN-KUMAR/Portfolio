@@ -137,7 +137,7 @@ const projects = [
     title: "NJ Connect",
     desc: "Connect with your friends, share your thoughts, like timeline posts and follow/unfollow users",
     img: "./assets/construction.jpg",
-    website: "",
+    website: "https://njconnect.netlify.app",
     code: "https://github.com/J-NAVEEN-KUMAR/social-media-app-frontend",
     tech: [
       { id: "1", item: "./assets/skills/html5.png" },
