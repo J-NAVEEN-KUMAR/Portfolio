@@ -10,7 +10,7 @@ const Works = () => {
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 5)
       : setCurrentSlide(currentSlide < len - 1 ? currentSlide + 1 : 0);
   };
 
@@ -19,83 +19,58 @@ const Works = () => {
       <div className="swing">
         <Swing />
       </div>
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
-        {projects.map((p) => (
-          <div className="workContainer">
-            <div className="item">
-              <div className="left">
-                <div className="leftContainer">
-                  <div className="imgContainer">
-                    {/* <img src={p.icon} alt="" /> */}
-                  </div>
-                  <h2>{p.title}</h2>
-                  <p>{p.desc}</p>
 
-                  <strong
-                    style={{
-                      fontFamily: "Dancing Script",
-                      fontSize: "30px",
-                      marginTop: "25px",
-                    }}
+      <div className="workContainer">
+        {projects.map((p) => (
+          <div className="item">
+            <div className="left">
+              <div className="leftContainer">
+                <div className="imgContainer">
+                  {/* <img src={p.icon} alt="" /> */}
+                </div>
+                <h2>{p.title}</h2>
+                <p>{p.desc}</p>
+
+                <strong
+                  style={{
+                    textDecoration: "underline",
+                    fontSize: "0.75rem",
+                  }}
+                >
+                  Technologies Used:{" "}
+                </strong>
+                <div className="tech">
+                  {p.tech.map((i) => (
+                    <img src={i.item} alt="" className="techItem" />
+                  ))}
+                </div>
+                <div className="liveWebsite">
+                  <a
+                    href={p.website}
+                    target="_blank"
+                    rel="noreferrer"
+                    // className="liveWebsite"
                   >
-                    Technologies Used:{" "}
-                  </strong>
-                  <div className="tech">
-                    {p.tech.map((i) => (
-                      <div className="techItem">
-                        <img src={i.item} alt="" />
-                      </div>
-                    ))}
-                  </div>
-                  <div className="liveWebsite">
-                    <a
-                      href={p.website}
-                      target="_blank"
-                      rel="noreferrer"
-                      // className="liveWebsite"
-                    >
-                      <img src="../assets/demo.png" alt="" />
-                      <button>Website</button>
-                    </a>
-                    <a
-                      href={p.code}
-                      target="_blank"
-                      rel="noreferrer"
-                      // className="liveWebsite"
-                    >
-                      <img src="../assets/code.png" alt="" />
-                      <button>Source code</button>
-                    </a>
-                  </div>
+                    <img src="../assets/demo.png" alt="" />
+                    <button>Website</button>
+                  </a>
+                  <a
+                    href={p.code}
+                    target="_blank"
+                    rel="noreferrer"
+                    // className="liveWebsite"
+                  >
+                    <img src="../assets/code.png" alt="" />
+                    <button>code</button>
+                  </a>
                 </div>
               </div>
-              <div className="right">
-                <img src={p.img} alt="" />
-              </div>
+            </div>
+            <div className="right">
+              <img src={p.img} alt="" />
             </div>
           </div>
         ))}
-      </div>
-      {/* <img
-        src="./assets/next.png"
-        alt=""
-        className="arrow right"
-        onClick={() => handleClick()}
-      /> */}
-      <div className="arrow right" onClick={() => handleClick()}>
-        <Arrow />
-      </div>
-      {/* <img
-        src="./assets/next.png"
-        alt=""
-        className="arrow left"
-        onClick={() => handleClick("left")}
-      /> */}
-      <div className="arrow left" onClick={() => handleClick("left")}>
-        <Arrow />
       </div>
     </div>
   );
